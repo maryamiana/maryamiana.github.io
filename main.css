@@ -283,6 +283,15 @@ table ol {
     margin-left: -1.3em;
 }
 
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th {
+  color: white;
+  background-color: var(--textColor);
+}
+
 .rg {
     border-collapse: collapse;
     text-align:left;
