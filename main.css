@@ -290,6 +290,7 @@ table, th, td {
 th {
   color: white;
   background-color: var(--textColor);
+  text-align:left;
 }
 
 .rg {
