@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145389864-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145389864-1');
+</script>
+
+
+    <link
+          rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alegreya Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+	<title>
+		Maryam Aliakbarpour
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn&display=swap">
+	<link rel="stylesheet" href="../../main.css" type="text/css"/>
+</head>
+
+<body>
+
+<div class="nav">
+	<div class="on"><a href="index.html">COMP 585 (Spring 24)</a></div> 
+    <div class="off"><a href="index.html#description">Description</a></div>
+	<div class="off"><a href="index.html#schedule">Schedule</a></div>
+    <div class="off"><a href="index.html#UsefulMaterial">Useful material</a></div>
+</div> 
+
+
+<div id="empty"></div>
+
+
+
+
+
+
+<div id="headpane">
+	<div id="pagetitle">
+	
+		<div> 
+			<p class="myname">COMP 585: <br> Probabilistic Toolkit for Learning and Computing</p>
+			<p class="job">Instructor: <a href="https://maryamaliakbarpour.com">Maryam Aliakbarpour</a>
+                <br>
+                <!-- 
+                TA: TBD<br>
+                -->
+            </p>
+			<p class="contact">
+				<b> Time:</b> Tuesdays and Thursdays 9:25 - 10:40 am <br>
+				<b>Place: </b> Keck Hall 107 <br>
+				<b>Instructor's email:</b> maryama [at] rice [dot] edu<br>
+                <b>Instructor's office hours: </b> Tuesdays 11:00 am - 12:00 pm (Duncan Hall 3098)<br>
+                <!-- 
+                <b>TA's email:</b> ab215 [at] rice [dot] edu<br> 
+                -->
+				
+                
+				<br>
+			</p>
+			<button id="syllabusBTN" class="button">
+            					<span>Syllabus</span>
+         	 			</button>
+					<script>
+						document.getElementById("syllabusBTN").addEventListener("click", function() {
+							window.open("Syllabus.pdf", "_blank");
+						});
+				</script>
+		</div>
+
+	</div>    
+</div>
+
+
+
+
+
+
+
+
+<div id="contentpane">
+	<div id="content">
+		
+		<hr class="default">
+		<!-- Description -->
+		<div>
+			<!-- Description title -->
+			<div>
+				<span class="anchor" id="description"></span>
+				<h3>Description</h3>
+            </div>
+	
+			<div> 
+				<p>
+				Randomness is one of the strongest tools which enables designing efficient algorithms. The applications of randomness in computer science spans machine learning algorithm, cryptography, networks, distributed systems. In this course, we study a variety of probabilistic tools and techniques that allow us to harness the power of randomness and apply it in algorithm design and learning theory. 
+				</p>
+			</div>
+
+		</div>
+        
+        
+        
+        
+        
+        <hr class="default">
+        <div>
+            <!-- Schedule title -->
+			<div>
+				<span class="anchor" id="schedule"></span>
+				<h3>Schedule</h3>
+            </div>
+            
+            
+			<table style="width:100%" frame=hsides rules=rows>
+				<tr>
+					<th>Date</th>
+					<th>Material</th>
+					<th>Assignment</th>
+				</tr>
+  				<tr>
+				  	<td>01/09/2024	</td>	
+                    <td> Probability overview, testing sortedness <br> 
+                        <a href = "Lecture01.pdf">Notes</a>, <a href="logistics_lecture1_slides.pdf">Logistics (slides)</a>
+                    </td>
+					<td>
+                    Fill out <a href="https://forms.gle/25XY8s4qRSowFBqD7">this form</a> and <a href="https://docs.google.com/spreadsheets/d/19D4OcRFib4OHUeXm5ksoeLlgN16WYtd4C3f1143rCag/edit?usp=sharing">scribe sign up sheet</a>.
+                    <br>
+                    Due on Monday, January 15, 11:59pm (CT) 
+                    </td>
+                    
+                </tr>
+  				<tr>
+				  	<td>01/11/2024	</td>	
+                    <td> Testing sortedness (cont.), concenteration of r.v. , coin bias estimation  <br> <a href = "Lecture02.pdf">Notes</a>, Section 4.3 in <a href="https://www.wisdom.weizmann.ac.il/~oded//pt-intro.html">IPT</a></td>
+					<td>
+                    <a href= "pset1.pdf">Problem set 1</a>
+                    <br>
+                    Due on Thursday, January 25, 11:59pm (CT) 
+                    </td>
+                </tr>
+                <tr>
+				  	<td>01/16/2024	</td>
+                    <td>Class cancelled due to weather condition <br> 
+                        <s> Distribution testing,
+                        <!--<a href = "Lecture03.pdf">Notes</a></td>-->
+                        Reading: Section 11 in <a href="https://www.wisdom.weizmann.ac.il/~oded//pt-intro.html">IPT</a>
+                        </s>
+					<td>
+                    </td>
+                </tr>
+                <tr>
+				  	<td>01/18/2024	</td>
+					<td>
+                        Distribution testing: uniformity <br> 
+                        <a href = "Lecture03.pdf">Notes</a>,
+                        Reading: Section 11 in <a href="https://www.wisdom.weizmann.ac.il/~oded//pt-intro.html">IPT</a></td>
+                </tr>
+                <tr>
+				  	<td>01/23/2024	</td>
+					<td>
+                        Poissonization<br> 
+                        <a href = "Lecture04.pdf">Notes</a>
+                        
+                </tr>
+                <tr>
+				  	<td>01/25/2024	</td>
+					<td>
+                        Distribution testing: closeness testing <br> 
+                        <a href = "Lecture04.pdf">Notes</a> (Same file as the previous lecture)
+                </tr>
+                
+                <tr>
+				  	<td>01/30/2024	</td>
+					<td>
+                        Distribution testing: Reducing L2-norm via flattening <br> 
+                        <a href = "Lecture04.pdf">Notes</a> (Same file as the previous lecture)
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>02/01/2024	</td>
+					<td>
+                        Gaussian distribution, CLT, Berry-Esseen Theorem<br> 
+                        <a href = "Lecture07.pdf">Notes</a>
+                    </td>
+                    <td>
+                    <a href= "pset2.pdf">Problem set 2</a>
+                    <br>
+                    Due on Saturday, February 17, 11:59pm (CT) 
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>02/06/2024	</td>
+					<td>
+                        Sub-Gaussian random variables<br> 
+                        <a href = "Lecture08.pdf">Notes</a>, Reading: Section 2.5 in <a href="https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf">HDP</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>02/08/2024	</td>
+					<td>
+                        No class (Monday's schedule)
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>02/13/2024	</td>
+					<td>
+                        Sub-exponential random variables<br>
+                        <a href="Lecture09.pdf">Notes</a>, Reading: Section 2.7 in <a href="https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf">HDP</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>02/15/2024	</td>
+					<td>
+                        Sub-exponential random variables (cont.), Bernstein condition, Bernstein's inequality<br>
+                        <a href="Lecture10.pdf">Notes</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                
+                
+                <tr>
+				  	<td>02/20/2024	</td>
+					<td>
+                        Johnson-Lindenstrauss lemma<br>
+                        <a href="Lecture11.pdf">Notes</a>, Reading: Section 5.3 in <a href="https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf">HDP</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>02/22/2024	</td>
+					<td>
+                        Linnear regression<br>
+                        <a href="Lecture12.pdf">Notes</a>
+                    </td>
+                    <td>
+                        <a href="COMP_585__Project_Guidelines.pdf">Project guidelines</a> is posted.
+                        <br>
+                        Proposal is due on Thursday, March 07, 11:59pm (CT)
+                    </td>
+                </tr>
+                
+                
+                <tr>
+				  	<td>02/27/2024	</td>
+					<td>
+                        PAC learning<br>
+                        <a href="Lecture13.pdf">Notes</a>, <a href="Lecture13_scribe.pdf">Scribe notes</a>, Reading: <a href="https://www.cis.upenn.edu/~mkearns/teaching/COLT/KearnsVaziraniChapter1.pdf" >Chapter 1</a> of <a href="https://books.google.com/books?id=vCA01wY6iywC" target=_blank>ICLT</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+				  	<td>02/29/2024	</td>
+					<td>
+                        PAC learning, Uniform convergence<br>
+                        <a href="Lecture14.pdf">Notes</a>, <a href="Lecture14_scribe.pdf">Scribe notes</a>, Reading: Section 4 of <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning">UML</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+				  	<td>03/05/2024	</td>
+					<td>
+                        Uniform convergence (cont.), No free lunch theorem<br>
+                        <a href="Lecture15.pdf">Notes</a>, <a href="Lecture15_scribe.pdf">Scribe notes</a>, Reading: Section 4 and 5 of <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning">UML</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>03/07/2024	</td>
+					<td>
+                        VC dimension, Fundamental theorem of PAC learning, Sauer-Shelah-Perles lemma<br>
+                        <a href="Lecture16.pdf">Notes</a>, <a href="Lecture16_scribe.pdf">Scribe notes</a>, Reading: Section 4 and 6 of <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning">UML</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>03/12/2024	</td>
+					<td> No class (Spring break)
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+				  	<td>03/14/2024	</td>
+					<td> No class (Spring break)
+                    </td>
+                    <td>
+                    <a href= "pset3.pdf">Problem set 3</a>
+                    <br>
+                    Due on Tuesday, April 2, 11:59pm (CT) 
+                    </td>
+                </tr>
+                <tr>
+				  	<td>03/19/2024	</td>
+					<td>
+                        Fundamental theorem of PAC learning (cont.)<br>
+                        <a href="Lecture16.pdf">Notes (same file as the previous lecture)</a>, <br>
+                        <a href="Lecture17_scribe.pdf">Scribe notes</a>, Reading: Section 4 and 6 of <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning">UML</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+				  	<td>03/21/2024	</td>
+					<td>
+                        Fundamental theorem of PAC learning (cont.), Learning in the presence of noise<br>
+                        <a href="Lecture18_scribe.pdf">Scribe notes</a>, Reading: Chapter 5 of <a href="https://books.google.com/books?id=vCA01wY6iywC" target=_blank>ICLT</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>03/26/2024	</td>
+					<td>
+                        Learning boolean conjunctions, <br> Statistical query model<br>
+                        <a href="Lecture19_scribe.pdf">Scribe notes</a>, Reading: Chapter 5 of <a href="https://books.google.com/books?id=vCA01wY6iywC" target=_blank>ICLT</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>03/28/2024	</td>
+					<td>
+                        Learning in SQ model => learning in presence of noise<br>
+                        <a href="Lecture20_scribe.pdf">Scribe notes</a>, Reading: Chapter 5 of <a href="https://books.google.com/books?id=vCA01wY6iywC" target=_blank>ICLT</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>04/02/2024	</td>
+					<td>
+                        Weak learning => Strong learning<br>
+                        <a href="Lecture21_scribe.pdf">Scribe notes</a>, Reading: Section 10 of <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning">UML</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+				  	<td>04/04/2024	</td>
+					<td>
+                        Adaboost<br>
+                        <a href="Lecture22_scribe.pdf">Scribe notes</a>, Reading: Section 10 of <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning">UML</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>                
+                <tr>
+				  	<td>04/09/2024	</td>
+					<td>
+                        Computational hardness of PAC learning: <br>
+                        Learning 3-term DNFs
+                        <br>
+                        <a href="Lecture23_scribe.pdf">Scribe notes</a>, Reading: <a href="https://www.cis.upenn.edu/~mkearns/teaching/COLT/KearnsVaziraniChapter1.pdf" >Chapter 1.4</a> of <a href="https://books.google.com/books?id=vCA01wY6iywC" target=_blank>ICLT</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>                
+                <tr>
+				  	<td>04/11/2024	</td>
+					<td>
+                        Special topic: differential privacy 
+                        <br>
+                        <a href="Lecture24_scribe.pdf">Scribe notes</a>
+                        <br> A good book: <a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf" >The Algorithmic Foundations of Differential Privacy</a>
+                    </td>
+                    <td>
+                    <a href= "pset4.pdf">Problem set 4</a>
+                    <br>
+                    Due on Friday, April 19, 11:59pm (CT) 
+                    </td>
+                </tr>
+                               
+                <tr>
+				  	<td>04/16/2024	</td>
+					<td>
+                        Project presentations 
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                               
+                <tr>
+				  	<td>04/18/2024	</td>
+					<td>
+                        Project presentations 
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+			</table>
+            <br>
+            <br>
+		</div>
+        
+        
+        
+        
+        
+        
+        <hr class="default">
+		<!-- Description -->
+		<div>
+			<!-- Description title -->
+			<div>
+				<span class="anchor" id="UsefulMaterial"></span>
+				<h3>Useful material</h3>
+            </div>
+	
+            <ul line-height="3">
+                <li margin-bottom="10px";>Some relevant textbooks (not required):
+                    <ul>
+                        <li> An Introduction to Computational Learning Theory, by Michael Kearns and Umesh Vazirani
+                        </li>
+                        
+                        
+                        <li><a href="https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.pdf">High-Dimensional Probability: An Introduction with Applications in Data Science</a>, by Roman Vershynin
+                        </li>
+                        
+                        <li><a href="https://www.wisdom.weizmann.ac.il/~oded//pt-intro.html">Introduction to Property Testing</a>, by Oded Goldreich
+                        </li>
+                        
+                        <li>Probability and Computing: Randomization and Probabilistic Techniques in Algorithms and Data Analysis, by Michael Mitzenmacher and Eli Upfal
+                        </li>
+                        
+                        <li> <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning">Understanding Machine Learning: From Theory to Algorithms</a>, by Shai Shalev-Shwartz and Shai Ben-David
+                        </li>
+
+                    </ul>
+                </li>
+            
+                <li><a href="https://www.lkozma.net/inequalities_cheat_sheet/ineq.pdf">Useful inequalities cheat sheet</a>, by L&aacute;szl&oacute; Kozma
+                </li>
+                
+                <li><a href="https://www.overleaf.com/read/wfgznbpbnmfn#7665d7">LaTeX template</a> for scribe notes or problem set answers
+                </li>
+                
+            </ul>
+			<div> 
+				<p>
+                </p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+	<div id="buffer"></div>
+	
+	<div id="footer">   
+		<div>
+    			<p>
+    				Template by <a href="https://www.kiragoldner.com/blog/websites.html" target="_blank">Kira Goldner</a>&#169;, plus a little bit of love from Maryam Aliakbarpour.
+    				<br> 
+				Fonts and buttons are adapted from <a href="https://play.teleporthq.io/projects/remarkable-template-6-2lxogw" target="_blank">this free template</a> 
+				by <a href="https://teleporthq.io/static-website-templates#templates-grid" target="_blank">Teleport HQ</a>
+				<br> 
+				&#169 2023 All Rights Reserved.
+			</p>
+		</div> 
+	</div>
+    <!-- If you really feel uncomfortable with giving me credit by name on your site, rather than deleting, please at lease uncomment and use the following logo credit. -->
+    <!--div id="footer"><div id="logo"> <a href="https://www.kiragoldner.com/" target="_blank"><img src="https://www.kiragoldner.com/favicon.png" width="12pt"/></a></div><div>&#169; Template</div-->
+
+  </body>
+
+
+</html>
