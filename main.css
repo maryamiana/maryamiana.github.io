@@ -306,6 +306,22 @@ a.pdf:hover {
     /*font-weight: normal;*/
 }
 
+table.schedule {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .schedule th, .schedule td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--linkColorLighter);
+  }
+
+  .schedule th {
+    background-color: var(--textColor);
+    color: white;
+  }
+
 table ol {
     margin: 0%;
     margin-left: -1.3em;
@@ -325,7 +341,25 @@ tr {
   border: solid;
   border-width: 1px 0;
   border-color: var(--linkColorLighter);
-}gi
+}
+
+tr.module-row > td {
+  background-color: rgba(71, 99, 133, 0.08);  /* soft blue tint */
+  border-top: 2px solid var(--linkColor);
+  border-bottom: 1px solid var(--linkColorLighter);
+  padding-top: .85rem;
+  padding-bottom: .85rem;
+}
+
+/* Module title + buttons layout */
+.module-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-weight: 700;
+  color: var(--linkColor);
+}
 
 .rg {
     border-collapse: collapse;
